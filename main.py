@@ -59,7 +59,7 @@ def mazeSolver(maze):
             queue.appendleft((nr, nc, coord[2] + 1, coord[3] + [nr * Columns + nc]))
 
 
-with open("maze2.txt") as f:
+with open("maze.txt") as f:
     maze = []
     for line in f:
         maze.append([i for i in line.strip("\n")])
